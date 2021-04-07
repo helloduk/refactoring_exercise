@@ -18,14 +18,14 @@ public class Video {
 	public Video(String title, int videoType, int priceCode, Date registeredDate) {
 		this.setTitle(title) ;
 		switch (videoType) {
-			case VHS: this.videoType = new VideoTypeVHS();
-			case CD: this.videoType = new VideoTypeCD();
-			case DVD: this.videoType = new VideoTypeDVD();
+			case VHS: this.videoType = new VideoTypeVHS(); break;
+			case CD: this.videoType = new VideoTypeCD(); break;
+			case DVD: this.videoType = new VideoTypeDVD(); break;
 		}
 		this.setVideoType(videoType) ;
 		switch (priceCode) {
-			case REGULAR: this.priceCode = new PriceCodeRegular();
-			case NEW_RELEASE: this.priceCode = new PriceCodeNewRelease();
+			case REGULAR: this.priceCode = new PriceCodeRegular(); break;
+			case NEW_RELEASE: this.priceCode = new PriceCodeNewRelease(); break;
 		}
 		this.registeredDate = registeredDate ;
 	}
