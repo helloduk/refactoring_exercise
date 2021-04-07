@@ -8,7 +8,7 @@ public class Report {
     }
 
     public void addReport(String report) {
-        this.report = report;
+        this.report += report;
     }
 
     public double getTotalCharge() {
